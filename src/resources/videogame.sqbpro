@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/16127512022.2/Documents/NetBeansProjects/cadastraVideogame/src/resources/videogame.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1881"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">
+DROP TABLE if exists videogame;
+CREATE TABLE &quot;videogame&quot; (
+	&quot;t_id&quot;	INTEGER PRIMARY KEY AUTOINCREMENT,
+	&quot;t_date&quot;	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	&quot;t_type&quot;	TEXT NOT NULL,
+	&quot;t_title&quot;	TEXT NOT NULL,
+	&quot;t_plataforma&quot;	TEXT NOT NULL,
+	&quot;t_midia&quot;	TEXT NOT NULL,
+	&quot;t_sinopse&quot;	TEXT NOT NULL,
+	&quot;t_status&quot;	TEXT NOT NULL defauLT 'on'
+);
+INSERT INTO &quot;videogame&quot; VALUES (1,'2002-03-23','FPS','Black','Xbox, Playstation','Digital','Vasco','on');</sql><current_tab id="0"/></tab_sql></sqlb_project>
